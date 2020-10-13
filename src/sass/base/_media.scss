@@ -1,0 +1,156 @@
+@media (max-width: 1024px) {
+	.container {
+		width: 90%;
+	}
+	.promo {
+		background-position: 35% 10%;
+	}
+}
+@media (max-width: 730px) {
+	.container {
+		width: 90%;
+	}
+	.header {
+		flex-wrap: wrap;
+		&__logo {
+			//width: 25px;
+			margin: 5px auto 0 auto;
+		}
+		&__official {
+			margin: 5px auto 0 auto;
+		}
+		&__phone {
+			margin: 5px auto 0 auto;
+		}
+	}
+	.promo {
+		background-position: 35% 10%;
+		&__header {
+			font-size: 35px;
+			margin-top: 67px;
+		}
+		&__subheader {
+			font-size: 18px;
+		}
+		&__icon-wrapper {
+			width: 300px;
+			margin-top: 48px;
+
+		}
+		&__icon {
+			font-size: 10px;
+			margin-top: 0;
+			img {
+				width: 34px;
+			}
+			
+		}
+		&__catalog {
+			font-size: 16px;
+			a {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.container {
+		width: 90%;
+	}
+	.header {
+		flex-wrap: wrap;
+		&__logo {
+			height: 25px;
+			margin: 5px auto 0 auto;
+		}
+		&__official {
+			font-size: 10px;
+			margin: 5px auto 0 auto;
+			span {
+				font-size: 13px;
+			}
+				
+		}
+		&__phone {
+			margin: 5px auto 0 auto;
+		}
+	}
+	.promo {
+		min-height: 550px;
+		padding-bottom: 0;
+		&__header {
+			font-size: 25px;
+			margin-top: 37px;
+		}
+		&__subheader {
+			font-size: 16px;
+		}
+		&__icon-wrapper {
+			width: 260px;
+			margin-top: 28px;
+
+		}
+		&__icon {
+			font-size: 10px;
+			margin-top: 0;
+			img {
+				width: 34px;
+			}
+			
+		}
+		&__catalog {
+			font-size: 14px;
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+	.button{
+		&_main {
+			margin-top: 46px;
+		}
+	}
+		
+}
+
+@media (max-width: 320px) {
+	.promo {
+		min-height: 450px;
+		padding-bottom: 25px;
+		&__wrapper{
+			align-items: center;
+		}
+		&__header {
+			font-size: 22px;
+			margin-top: 37px;
+		}
+		&__subheader {
+			font-size: 13px;
+		}
+		&__icon-wrapper {
+			width: 260px;
+			margin-top: 28px;
+
+		}
+		&__icon {
+			font-size: 10px;
+			margin-top: 0;
+			img {
+				width: 34px;
+			}
+			
+		}
+		&__catalog {
+			font-size: 14px;
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+	.button{
+		&_main {
+			margin-top: 46px;
+		}
+	}
+}
