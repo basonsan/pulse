@@ -1,6 +1,15 @@
 body {
 	font-family: 'Museo Sans', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-
 }
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+@import "base/general";
+@import "base/mixins";
+@import "base/variable";
+@import "block/promo";
+@import "block/header";
+@import "block/button"
