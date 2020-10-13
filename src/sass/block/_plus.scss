@@ -1,0 +1,41 @@
+.plus {
+    min-width: 472px;
+    padding: 69px 0 81px 0;
+    background-color: #f6f6f6;
+    &__header{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: #0d0d0d;
+    }
+    &__icon-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__icon-card{
+        width: 241px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: #0d0d0d;
+        
+        margin-top: 65px;
+        h3{
+            margin-top: 38px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        span{
+            margin-top: 26px;
+            font-size: 14px;
+            font-weight: 500;
+            .Red{
+                text-transform: uppercase;
+                color: #ff0000;
+            }
+        }
+    }
+}
