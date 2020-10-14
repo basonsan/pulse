@@ -34,6 +34,18 @@
 	}
 }
 
+@media (max-width: 870px) {
+	.switching{
+		padding: 70px 0 50px 0;
+		min-height: 100px;
+		&__img-wrapper {
+			width: 90%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
 
 @media (max-width: 730px) {
 	.container {
