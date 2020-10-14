@@ -21,6 +21,17 @@
 			}
 		}
 	}
+	.h2-header{
+		&_left{
+			font-size: 30px;
+		}
+	}
+	.request{
+		&__descr{
+			margin-top: 66px;
+			font-size: 20px;
+		}
+	}
 }
 
 
@@ -95,6 +106,23 @@
 			}
 		}
 	}
+	.h2-header{
+		&_left{
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+	.request{
+		&__descr{
+			margin-top: 66px;
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+	.request-form{
+		width: 80%;
+		margin: 36px auto 0 auto;
+	}
 }
 
 @media (max-width: 425px) {
@@ -156,6 +184,25 @@
 	}
 	.h2-header{
 		font-size: 25px;
+	}
+	.h2-header{
+		&_left{
+			font-size: 25px;
+		}
+	}
+	.request{
+		min-height: 100px;
+		padding: 68px 0 68px 0;
+		background-position: 55%;
+		&__descr{
+			margin-top: 54px;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+	.request-form{
+		width: 80%;
+		margin: 36px auto 0 auto;
 	}
 		
 }
