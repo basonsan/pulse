@@ -1,0 +1,30 @@
+.switching{
+    min-height: 722px;
+    padding: 150px 0;
+    &__img-wrapper {
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+        // display: flex;
+        // justify-content: flex-end;
+        // align-items: center;
+    }
+    &__img{
+        
+    }
+    .slick-list{
+        
+    }
+    .slick-prev, .slick-next{
+        background-color: #fff;
+        border: none;
+        position: absolute;
+        left: -66px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slick-next{
+        left: auto;
+        right: -66px;
+    }
+}
