@@ -135,6 +135,24 @@
 		width: 80%;
 		margin: 36px auto 0 auto;
 	}
+	.product {
+		&__tab {
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.product {
+		&__tabs {
+			flex-direction: column;
+			align-items: center;
+			margin: 40px 0;
+		}
+		&__tab {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 @media (max-width: 425px) {
@@ -257,5 +275,17 @@
 		&_main {
 			margin-top: 46px;
 		}
+	}
+	.card-product {
+		&__old-price {
+			font-size: 13px;
+		}
+		&__price {
+			font-size: 15px;
+		}
+	}
+	.button_buy {
+		width: 115px;
+		height: 36px;
 	}
 }
