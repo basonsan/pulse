@@ -8,6 +8,8 @@ body {
 	margin: 0 auto;
 }
 
+
+
 @import "base/general";
 @import "base/mixins";
 @import "base/variable";
@@ -22,4 +24,9 @@ body {
 @import "block/product";
 @import "block/card-product";
 @import "block/review";
+@import "block/footer";
 @import "base/media";
+
+.hide {
+	top: -100%;
+}

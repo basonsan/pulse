@@ -21,6 +21,18 @@ $(document).ready(function(){
           .closest('div.container').find('div.product__items').removeClass('product__items_active').eq($(this).index()).addClass('product__items_active');
     });
 
+    $('.footer__maps').on('mousedown', function() {
+        $('.footer__info').addClass('hide');
+    });
+
+    $('.footer__maps').on('mouseup', function() {
+        setTimeout(() => {  
+                $('.footer__info').removeClass('hide'); 
+        }, 3000);
+        
+    });
+
+
     function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {
