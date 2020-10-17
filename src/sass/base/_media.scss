@@ -140,6 +140,27 @@
 			font-size: 15px;
 		}
 	}
+	.review {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__img {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		&__descr-wrapper {
+			align-items: center;
+			width: 80%;
+		}
+		&__descr {
+			text-align: center;
+		}
+		hr {
+			width: 80%;
+			margin: 20px auto;
+		}
+	}
 }
 
 @media (max-width: 600px) {
@@ -233,6 +254,16 @@
 	.request-form{
 		width: 80%;
 		margin: 36px auto 0 auto;
+	}
+
+	.review {
+		&__subheader {
+			margin-top: 7px;
+		}
+		&__descr {
+			font-size: 13px;
+			margin-top: 7px;
+		}
 	}
 		
 }
