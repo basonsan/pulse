@@ -39,7 +39,7 @@ $(document).ready(function(){
 
      //обработка события нажатия на кнопку закрыть модального окна
     $('.modal__close, .overlay').on('click', function() {
-        $('.overlay').fadeOut();
+        $('.overlay, #consultation, #order, #thanks').fadeOut();
     });
 
     hideInfo ('touchstart'); //функция для скрытия инфо при нажатии (на мобильных) на карту

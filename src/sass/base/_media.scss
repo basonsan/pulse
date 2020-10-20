@@ -174,7 +174,26 @@
 			margin-bottom: 10px;
 		}
 	}
+	.modal {
+		&__close {
+			top: auto;
+			right: auto;
+			bottom: -80px;
+			line-height: 60px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 60px;
+		}
+	}
 }
+
+@media (max-width: 436px) {
+	.modal {
+		width: 95%;
+		padding: 30px 5px;
+	}
+}
+
 
 @media (max-width: 425px) {
 	.container {
@@ -318,5 +337,13 @@
 	.button_buy {
 		width: 115px;
 		height: 36px;
+	}
+	.modal {
+		&__header{
+			font-size: 16px;
+		}
+		&__descr{
+			font-size: 12px;
+		}
 	}
 }
