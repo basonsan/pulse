@@ -38,9 +38,14 @@ $(document).ready(function(){
     });
 
      //обработка события нажатия на кнопку закрыть модального окна
-    $('.modal__close, .overlay').on('click', function() {
+    $('.modal__close').on('click', function() {
         $('.overlay, #consultation, #order, #thanks').fadeOut();
     });
+
+    validatorForm('#request-form');
+    validatorForm('#modal-request-form');
+    validatorForm('#modal-buy');
+    $('input[name=phone').mask("+7 (999) 999-99-99");
 
     hideInfo ('touchstart'); //функция для скрытия инфо при нажатии (на мобильных) на карту
     hideInfo ('mousedown'); //функция для скрытия инфо при нажатии (мышкой) на карту
@@ -79,5 +84,32 @@ $(document).ready(function(){
             })
         });
     };
+    
+    //функция валидации форм
+    function validatorForm(classForm) {
+        $(classForm).validate({
+            rules: {
+              name: "required",
+              phone: {
+                required: true
+              },
+              email: {
+                required: true,
+                email: true
+              }
+            },
+            messages: {
+              name: "Укажите Ваше Имя",
+              phone: {
+                required: "Укажите Номер телефона"
+              },
+              email: {
+                required: "Укажите почтовый ящик",
+                email: "Неверный формат почтового ящика"
+              }
+            }
+        });
+    }
+    
 
   });
