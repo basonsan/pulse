@@ -1,5 +1,14 @@
 //alert (1234);
+
+
 $(document).ready(function(){
+    
+    AOS.init({
+        offset: 100,
+        duration: 1000,
+        easing: 'ease-in-quad',
+        delay: 100,
+      });
     //подключаем слайдер с товарами
     $('.switching__img-wrapper').slick({
         speed: 1000,
@@ -79,6 +88,7 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
 
 
     hideInfo ('touchstart'); //функция для скрытия инфо при нажатии (на мобильных) на карту
