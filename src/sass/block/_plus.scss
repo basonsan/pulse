@@ -32,6 +32,9 @@
         }
         &_animated {
             animation: zoom-in-out 2s infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }
