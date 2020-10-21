@@ -42,10 +42,44 @@ $(document).ready(function(){
         $('.overlay, #consultation, #order, #thanks').fadeOut();
     });
 
+    //делаем валидацию всех форм сайта
     validatorForm('#request-form');
     validatorForm('#modal-request-form');
     validatorForm('#modal-buy');
     $('input[name=phone').mask("+7 (999) 999-99-99");
+
+    //отправка письма с использованием ajax
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('.overlay, #consultation, #order, #thanks').fadeOut();
+        $('.overlay, #thanks').fadeIn();
+        $('form').trigger('reset');
+      });
+      return false;
+    });
+
+    //настройка появления стрелки наверх
+    $(window).scroll (function(){
+        if ($(this).scrollTop()>1600) {
+            $('.up-arrow').fadeIn();
+        } else {
+            $('.up-arrow').fadeOut();
+        }
+    });
+
+    //функция плавного перехода по ссылкам на странице #
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
 
     hideInfo ('touchstart'); //функция для скрытия инфо при нажатии (на мобильных) на карту
     hideInfo ('mousedown'); //функция для скрытия инфо при нажатии (мышкой) на карту
