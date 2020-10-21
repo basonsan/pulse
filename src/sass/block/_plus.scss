@@ -15,7 +15,6 @@
         align-items: center;
         text-align: center;
         color: #0d0d0d;
-        
         margin-top: 65px;
         h3{
             margin-top: 38px;
@@ -30,6 +29,9 @@
                 text-transform: uppercase;
                 color: #ff0000;
             }
+        }
+        &_animated {
+            animation: zoom-in-out 2s infinite;
         }
     }
 }
